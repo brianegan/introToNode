@@ -4,10 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		
-		<title>reveal.js - HTML5 Presentations</title>
-
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<title>Introduction to NodeJS, by Brian Egan</title>
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -15,10 +12,10 @@
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 		
 		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/theme/default.css">
+		<link rel="stylesheet" href="css/theme/node.css">
 
 		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="lib/css/ir_black.css">
 
 		<script>
 			// If the query includes print-pdf we'll use the PDF print sheet
@@ -41,102 +38,103 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
+					<h1>Intro to Node.js</h1>
+					<h3>Heck yah server-side JavaScript</h3>
 				</section>
 				
 				<section>
-					<h2>Heads Up</h2>
+					<h2>What is Node.js?</h2>
+					<p>Node.js is a platform built on <i>Chrome's JavaScript runtime</i> for easily building fast, scalable network applications. Node.js uses an <i>event-driven, non-blocking I/O model</i> that makes it lightweight and efficient, perfect for <i>data-intensive real-time applications</i> that run across distributed devices.</p>
 					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with 
-						support for CSS 3D transforms to see it in its full glory.
+						<i><small>- <a href="http://nodejs.org/">Nodejs.org</a></small></i>
 					</p>
-					<p>
-						<i><small>- <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small></i>
-					</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you run the speaker notes server.
-					</aside>
 				</section>
 				
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#/2/1">down</a>.
-						</p>
-						<a href="#/2/1" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+          <h2>Say What!?</h2>
+          <p>&nbsp;</p>
+          <ul>
+            <li>Chrome's JavaScript Runtime</li>
+            <li>Event-driven non-blocking I/O model?</li>
+            <li>Real time network apps</li>
+          </ul>
 					</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
+						<h2>Built on V8</h2>
+            <p>&nbsp;</p>
+            <ul>
+              <li>Chrome's JavaScript Engine</li>
+              <li>Super fast</li>
+              <li>Extensible!</li>
+            </ul>
 					</section>
 					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
+            <h2>Event-Driven Non-blocking I/O</h2>
+            <h3>jQuery</h3>
+            <pre>
+              <code contenteditable>
+$('button').on('click', function (event) {
+  console.log('someone clicked!');
+});
+              </code>
+            </pre>
+
+            <h3>Node</h3>
+            <pre>
+              <code contenteditable>
+server.on('connection', function (stream) {
+  console.log('someone connected!');
+});
+              </code>
+            </pre>
 					</section>
 					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
+						<h2>Realtime Network Apps</h2>
+						<iframe src="http://player.vimeo.com/video/11613517" width="500" height="375" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/11613517">Hummingbird</a> from <a href="http://vimeo.com/mnutt">Michael Nutt</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
 					</section>
 				</section>
 
 				<section>
-					<h2>Holistic Overview</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview!
-					</p>
+          <h2>What's it good at?</h2>
+          <ul>
+            <li class="fragment">JSON APIs</li>
+            <li class="fragment">Single Page Apps</li>
+            <li class="fragment">Streaming Data</li>
+            <li class="fragment">Shell Scripts!!!</li>
+          </ul>
 				</section>
 
 				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides pinch your way to the overview.
-					</p>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
+					<h2>What's it not so good at?</h2>
 					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
+            <li class="fragment">CPU Heavy Apps</li>
+            <li class="fragment">Buzzword Bingo</li>
 					</ul>
+				</section>
+
+        <section>
+          <h2>Installing Node</h2>
+          <ul>
+            <li>Visit <a href="http://nodejs.org">nodejs.org</a></li>
+            <li>Download</li>
+            <li>Profit</li>
+          </ul>
 				</section>
 				
 				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
+          <h2>Node REPL</h2>
+          <p>Think of it as your "console" for Node</p>
 				</section>
 
-				<section data-markdown>
-					## Markdown support
-					
-					For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-					<pre><code contenteditable style="margin-top: 20px;">&lt;section data-markdown&gt;
-  ## Markdown support
-
-  For those of you who like that sort of thing. 
-  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-&lt;/section&gt;
-					</code></pre>
+				<section>
+          <h2>First App!</h2>
+          <pre>
+            <code contenteditable>
+console.log("Hello, world!");
+            </code>
+          </pre>
 				</section>
 
 				<section>
